@@ -1,3 +1,5 @@
+import Title from './title';
+
 function getRandomHexColor() {
   return `#${Math.floor((0.2 + 0.5 * Math.random()) * 16777215).toString(16)}`;
 }
@@ -31,6 +33,10 @@ export const App = () => {
       }}
     >
       React homework template
+      <div>
+        <Title title={'Phonebook'} />
+        <Title title={'Contacts'} />
+      </div>
     </div>
   );
 };
